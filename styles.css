@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: #61dafb;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li button {
+    background-color: #21a1f1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #1482c8;
+}
+
+.pagina {
+    display: none;
+}
+
+.pagina.active {
+    display: block;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
