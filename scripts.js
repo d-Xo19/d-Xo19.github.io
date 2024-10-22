@@ -124,3 +124,4 @@ function calcularCongruencia() {
     document.getElementById('resultado-congruencia').textContent = `Resultado de la congruencia: ${resultado}`;
     document.getElementById('explicacion-congruencia').textContent = explicacion;
 }
+
