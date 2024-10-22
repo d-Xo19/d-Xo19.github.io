@@ -29,9 +29,10 @@
         <section id="mcd-mcm" class="pagina active">
             <h2>Calculadora de MCD y MCM</h2>
             <p><strong>Máximo Común Divisor (MCD):</strong> El MCD de dos números es el mayor número que divide a ambos sin dejar residuo. El algoritmo de Euclides es una forma eficiente de encontrar el MCD utilizando divisiones sucesivas.</p>
-            <img src="img/Algoritmo de Euclides.png" alt="Algoritmo de Euclides">
+            <img src="img/Algoritmo de Euclides.png" alt="Algoritmo de Euclides" width="500" height="300">
             <p><strong>Mínimo Común Múltiplo (MCM):</strong> El MCM de dos números es el menor número que es múltiplo de ambos. Se puede calcular a partir del MCD usando la fórmula: MCM(a, b) = (a * b) / MCD(a, b).</p>
-            <img src="img/Ejemplo de MCD y MCM.png" alt="Ejemplo de MCD y MCM">
+            <img src="img/Ejemplo de MCD y MCM.png" alt=" width="500" height="300"Ejemplo de MCD y MCM">
+            <p></p>
             <input type="number" id="num1" placeholder="Número 1">
             <input type="number" id="num2" placeholder="Número 2">
             <button onclick="calcularMCD()">Calcular MCD</button>
@@ -44,9 +45,10 @@
         <section id="fibonacci" class="pagina">
             <h2>Sucesión Fibonacci</h2>
             <p><strong>Sucesión de Fibonacci:</strong> Es una secuencia de números en la que cada número es la suma de los dos anteriores. Esta sucesión aparece en muchos fenómenos de la naturaleza.</p>
-            <img src="img/Espiral de Fibonacci en la naturaleza.jpg" alt="Espiral de Fibonacci en la naturaleza">
+            <img src="img/Espiral de Fibonacci en la naturaleza.jpg" width="400" height="400" alt="Espiral de Fibonacci en la naturaleza">
             <p><strong>Ejemplo:</strong> La sucesión comienza con 0 y 1. Luego: 0, 1, 1, 2, 3, 5, 8, 13, 21...</p>
             <img src="img/Secuencia Fibonacci.jpeg" alt="Secuencia Fibonacci">
+            <p></p>
             <input type="number" id="fibo-n" placeholder="Introduce un número">
             <button onclick="calcularFibonacci()">Calcular Fibonacci</button>
             <p id="resultado-fibonacci"></p>
@@ -56,7 +58,7 @@
         <section id="numeros-primos" class="pagina">
             <h2>Verificación de Números Primos</h2>
             <p><strong>Número Primo:</strong> Un número primo es aquel que solo tiene dos divisores: 1 y él mismo. Los números primos son fundamentales en matemáticas y criptografía.</p>
-            <img src="img/numeros-primos-ejemplo.png" alt="Ejemplos de números primos">
+            <img src="img/numeros-primos-ejemplo.png" width="400" height="300" alt="Ejemplos de números primos">
             <p><strong>Ejemplo:</strong> 7 es primo, porque solo es divisible entre 1 y 7. 6 no es primo, porque es divisible entre 1, 2, 3 y 6.</p>
             <input type="number" id="num-primo" placeholder="Introduce un número">
             <button onclick="esPrimo()">Verificar si es primo</button>
@@ -68,7 +70,7 @@
         <section id="divisiones-enteras" class="pagina">
             <h2>Divisiones Enteras</h2>
             <p><strong>División Entera:</strong> Es un proceso donde un número se divide y se obtiene un cociente y residuo. Se usa para encontrar cuántas veces un número cabe en otro, dejando un residuo.</p>
-            <img src="imagenes/division-ejemplo.png" alt="Ejemplo de división entera">
+            <img src="img/division-ejemplo.png" alt="Ejemplo de división entera">
             <p><strong>Ejemplo:</strong> 17 dividido por 5 da un cociente de 3 y un residuo de 2, porque 5 cabe 3 veces en 17 y sobra 2.</p>
             <input type="number" id="dividendo" placeholder="Dividendo">
             <input type="number" id="divisor" placeholder="Divisor">
@@ -81,7 +83,7 @@
         <section id="congruencias" class="pagina">
             <h2>Congruencias y Teoremas</h2>
             <p><strong>Teorema de Fermat Pequeño:</strong> Si p es un número primo, entonces para cualquier número a que no sea divisible por p, a^(p-1) ≡ 1 (mod p). Esto es clave en criptografía.</p>
-            <img src="imagenes/teorema-fermat.png" alt="Teorema de Fermat">
+            <img src="img/teorema de fermat.png" alt="Teorema de Fermat">
             <p><strong>Teorema de Euler:</strong> Generaliza el teorema de Fermat. Se aplica a cualquier número n y a su función φ(n), que cuenta cuántos números son coprimos con n.</p>
             <input type="number" id="numero-cong" placeholder="Introduce un número">
             <button onclick="calcularCongruencia()">Aplicar Teorema</button>
