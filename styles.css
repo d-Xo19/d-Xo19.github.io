@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 255, 255);
     color: #000000;
     margin: 0;
@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    background-color: #61dafb;
+    background-color: #2272FF;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #000000;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li button {
-    background-color: #21a1f1;
+    background-color: rgba(50, 50, 50);
     color: white;
     border: none;
     padding: 10px 20px;
