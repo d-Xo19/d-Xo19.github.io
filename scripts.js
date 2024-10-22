@@ -125,3 +125,45 @@ function calcularCongruencia() {
     document.getElementById('explicacion-congruencia').textContent = explicacion;
 }
 
+const secciones = ['mcd-mcm', 'fibonacci', 'numeros-primos', 'divisiones-enteras', 'congruencias', 'presentcion'];
+let indiceActual = 0; // Controla la página activa
+
+// Función para mostrar la sección actual con animación
+function mostrarPaginaActual() {
+    // Ocultar todas las páginas con un pequeño retraso para la transición
+    secciones.forEach(seccion => {
+        const pagina = document.getElementById(seccion);
+        if (pagina) {
+            pagina.classList.remove('active');
+        }
+    });
+
+    // Mostrar la página actual con un ligero retraso para permitir la animación
+    setTimeout(() => {
+        const paginaActual = document.getElementById(secciones[indiceActual]);
+        if (paginaActual) {
+            paginaActual.classList.add('active');
+        }
+    }, 200); // Retraso de 200ms para la transición
+}
+
+// Función para ir a la página siguiente
+function siguientePagina() {
+    if (indiceActual < secciones.length - 1) {
+        indiceActual++;
+        mostrarPaginaActual();
+    }
+}
+
+// Función para ir a la página anterior
+function anteriorPagina() {
+    if (indiceActual > 0) {
+        indiceActual--;
+        mostrarPaginaActual();
+    }
+}
+
+// Iniciar en la primera sección
+document.addEventListener("DOMContentLoaded", function() {
+    mostrarPaginaActual();
+});
