@@ -96,7 +96,6 @@ p {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Aplicamos animación al contenido */
 .pagina {
     display: none;
     padding: 20px;
@@ -104,16 +103,14 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    animation: fadeIn 0.6s ease-in-out forwards; /* Animación de entrada */
+    animation: fadeIn 0.6s ease-in-out forwards; 
 }
 
-/* La clase 'active' mostrará la página */
 .pagina.active {
     display: block;
     opacity: 1;
 }
 
-/* Estilos para botones de navegación */
 .navegacion {
     text-align: center;
     margin-top: 20px;
@@ -137,7 +134,7 @@ p {
 /* Transiciones de las páginas */
 .pagina {
     transition: all 0.5s ease;
-    transform: translateY(20px); /* Añadimos movimiento */
+    transform: translateY(20px);
     opacity: 0;
     position: relative;
 }
