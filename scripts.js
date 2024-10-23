@@ -1,4 +1,12 @@
-
+// Iniciar mostrando solo la página de inicio
+document.addEventListener("DOMContentLoaded", function() {
+    // Al cargar, ocultamos el menú y las secciones de la app
+    document.querySelector('nav').style.display = 'none'; // Ocultar el menú
+    const paginas = document.querySelectorAll('.pagina');
+    paginas.forEach(pagina => {
+        pagina.classList.remove('active'); // Ocultar todas las secciones
+    });
+});
 // Función para mostrar la sección seleccionada y ocultar las demás
 function mostrarSeccion(seccionId) {
     const paginas = document.querySelectorAll('.pagina');
@@ -23,15 +31,6 @@ function comenzarApp() {
     mostrarSeccion('mcd-mcm');  // Mostrar la primera sección
 }
 
-// Iniciar mostrando solo la página de inicio
-document.addEventListener("DOMContentLoaded", function() {
-    // Al cargar, ocultamos el menú y las secciones de la app
-    document.querySelector('nav').style.display = 'none'; // Ocultar el menú
-    const paginas = document.querySelectorAll('.pagina');
-    paginas.forEach(pagina => {
-        pagina.classList.remove('active'); // Ocultar todas las secciones
-    });
-});
 
 
 // Funciones matemáticas aquí (MCD, MCM, Fibonacci, etc.)
